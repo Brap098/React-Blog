@@ -2,13 +2,35 @@
   text-align: center;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-}
 
 .navbar {
-  width: 100;
+  width: 100%;
   height: 80px;
-  background-color: darkgreen ;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Main {
+  font-size: 25px;
+  font-family: cursive;
+  color:cadetblue
+}
+
+.Post{
+  font-size: 28px;
+  font-family: Brush Script MT;
+  font-weight: 100;
+  color: blueviolet;
+}
+ 
+.link a {
+  margin: 10px;
+}
+
+.link a:hover {
+  cursor: pointer;
+  font-weight: bolder;
 }
