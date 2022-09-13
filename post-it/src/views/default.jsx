@@ -5,7 +5,7 @@ function Def (html) {
         <html>
             <head>
                 <title>Title</title>
-                <link rel="stylesheet" href="App.css"/>
+                <link rel="stylesheet" href="/App.css"/>
             </head>
             <body>
                 <nav>
@@ -14,7 +14,7 @@ function Def (html) {
                             <a href="/">Home</a>
                         </li>
                         <li>
-                        <a href="/posts">About</a>
+                        <a href="/home">About</a>
                         </li>
                         <li>
                         <a href="/posts/new">Add Post</a>
