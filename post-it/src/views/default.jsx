@@ -11,10 +11,10 @@ function Def (html) {
                 <nav>
                     <ul>
                         <li>
-                            <a href="/">Home</a>
+                            <a href="/">About</a>
                         </li>
                         <li>
-                        <a href="/home">About</a>
+                        <a href="/postpage">Post Page</a>
                         </li>
                         <li>
                         <a href="/posts/new">Add Post</a>

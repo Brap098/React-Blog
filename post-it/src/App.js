@@ -9,9 +9,9 @@ function App() {
 
     <div className="navbar">
       <div className="link">
-        <a className="Main">Home</a>
-        <a className="Post">Add Post</a>
-        <a className="About">About</a>
+        <a className="Main">About</a>
+        <a className="Post">Post Page</a>
+        <a className="APost">Add Post</a>
       </div>
     </div>
     </div>

@@ -1,8 +1,11 @@
+// Home page
+
 const React = require('react')
 const Def = require('../default')
+const { default: PostPage } = require('../pages/AddPost')
 
 function index (data) {
-  let placesFormatted = data.posts.map((post, index) => {
+  let postsFormatted = data.posts.map((post, home) => {
     return (
       <div className="col-sm-6">
         <h2>
@@ -26,7 +29,7 @@ function index (data) {
         <main>
             <h1>Places to Rant or Rave About</h1>
             <div className="row">
-              {placesFormatted}
+              {postsFormatted}
             </div>
         </main>
     </Def>
@@ -34,4 +37,4 @@ function index (data) {
 }
 
   
-module.exports = index
+module.exports = postpage
