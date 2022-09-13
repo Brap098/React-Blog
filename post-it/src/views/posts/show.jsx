@@ -19,7 +19,7 @@ function show (data) {
         <p>No comments yet!</p>
 
         <h2>Comment/Rant </h2>
-            <form method="POST" action={`/places/${data.ppost.id}/comment`}>
+            <form method="POST" action={`/places/${data.post.id}/comment`}>
                 <div className="row">
                     <div className="form-group col=sm-6">
                         <label htmlFor="author">Author</label>
