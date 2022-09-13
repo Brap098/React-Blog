@@ -5,7 +5,7 @@ function about () {
     return (
         <Def>
         <main>
-    <h1>Res Rant</h1>
+    <h1>Post-It</h1>
     <div>
       <img src="post-it/src/Img/istockphoto-664954520-1024x1024.jpg" 
       alt="Post-it note board." />
