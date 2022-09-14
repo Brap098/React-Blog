@@ -1,39 +1,41 @@
-import React from 'react'
+const React = require('react')
+const Def = require('../default')
 
-function PostPage() {
-
-  return ( 
-    <div className="create">
-        <h2>Add a New Blog</h2>
-        <form onSubmit={handleSubmit}>
-            <label>Blog Title</label>
-            <input 
-                type="text"
-                required
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-            />
-            <label>Blog Body:</label>
-            <textarea
-                required
-                value={body}
-                onChange={(e) => setBody(e.target.value)}
-            />
-            <label>Blog author:</label>
-            <select
-                value={author}
-                onChange={(e) => setAuthor(e.target.value)}
-            >
-                <option value="Shubham">Shubham</option>
-                <option value="Satyam">Satyam</option>
-                <option value="Anmol">Anmol</option>
-            </select>
-            {!isPending && <button>Add Blog</button>}
-            {isPending && <button disabled>Adding Blog</button>}
-        </form>
-    </div>
-  );
+function new_form (data) {
+    let message = ''
+        if (data.message) {
+            message = (
+                <h4 className="alert-danger">
+                    {data.message}
+                </h4>
+            )
+        }
   
+    return (
+        <Def>
+          <main>
+            <h1>Add a New Post</h1>
+            {message}
+            <form method="POST" action="/places">
+                <div className="form-group">
+                    <label htmlFor="name">Post Name</label>
+                    <input className="form-control" id="name" name="name" required />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="cuisines">add text</label>
+                    <input className="form-control" id="text" name="text" required />
+                </div>
+                <input className="btn btn-primary" type="submit" value="Post" />
+            </form>
+
+
+          </main>
+        </Def>
+    )
 }
 
-export default PostPage
+
+  
+
+
+module.exports = new_form

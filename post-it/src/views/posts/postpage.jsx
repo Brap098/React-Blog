@@ -4,7 +4,7 @@ const React = require('react')
 const Def = require('../default')
 const { default: PostPage } = require('../pages/AddPost')
 
-function postpage (data) {
+function PostPage (data) {
   let postsFormatted = data.posts.map((post, home) => {
     return (
       <div className="col-sm-6">
@@ -14,11 +14,7 @@ function postpage (data) {
           </a>
         </h2>
         <p clasName="text-center">
-          {post.cuisines}
-        </p>
-        <img src={post.pic} alt={post.name} />
-        <p clasName="text-center">
-          Located in {post.city}, {post.state}
+          {post.text}
         </p>
       </div>
     )
@@ -37,4 +33,4 @@ function postpage (data) {
 }
 
   
-module.exports = postpage
+module.exports = PostPage
