@@ -9,9 +9,9 @@ function App() {
 
     <div className="navbar">
       <div className="link">
-        <a className="Main">About</a>
-        <a className="Post">Post Page</a>
-        <a className="APost">Add Post</a>
+        <a href={'/'} className="Main">About</a>
+        <a href={'/posts'} className="Post">Post Page</a>
+        <a href={'/posts/new'} className="APost">Add Post</a>
       </div>
     </div>
     </div>
